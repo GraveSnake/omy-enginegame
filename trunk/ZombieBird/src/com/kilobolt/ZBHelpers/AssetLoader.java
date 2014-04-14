@@ -12,10 +12,10 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class AssetLoader {
 
 	public static Texture texture, logoTexture;
-	public static TextureRegion logo, zbLogo, bg, grass, bird, birdDown,
-			birdUp, skullUp, skullDown, bar, playButtonUp, playButtonDown,
+	public static TextureRegion logo, zbLogo, bg, grass, engine_1, engine_2,
+			engine_3, engine_4, skullUp, skullDown, bar, playButtonUp, playButtonDown,
 			ready, gameOver, highScore, scoreboard, star, noStar, retry;
-	public static Animation birdAnimation;
+	public static Animation engineAnimation;
 	public static Sound dead, flap, coin, fall;
 	public static BitmapFont font, shadow, whiteFont;
 	private static Preferences prefs;
@@ -65,18 +65,21 @@ public class AssetLoader {
 		grass = new TextureRegion(texture, 0, 43, 143, 11);
 		grass.flip(false, true);
 
-		birdDown = new TextureRegion(texture, 136, 0, 17, 12);
-		birdDown.flip(false, true);
+		engine_1 = new TextureRegion(texture, 136, 0, 17, 12);
+		engine_1.flip(false, true);
 
-		bird = new TextureRegion(texture, 153, 0, 17, 12);
-		bird.flip(false, true);
+		engine_2 = new TextureRegion(texture, 153, 0, 17, 12);
+		engine_2.flip(false, true);
 
-		birdUp = new TextureRegion(texture, 170, 0, 17, 12);
-		birdUp.flip(false, true);
+		engine_3 = new TextureRegion(texture, 170, 0, 17, 12);
+		engine_3.flip(false, true);
+		
+		engine_4 = new TextureRegion(texture, 170, 13, 17, 12);
+		engine_4.flip(false, true);
 
-		TextureRegion[] birds = { birdDown, bird, birdUp };
-		birdAnimation = new Animation(0.1f, birds);
-		birdAnimation.setPlayMode(Animation.LOOP);
+		TextureRegion[] engine = { engine_1, engine_2, engine_3, engine_4 };
+		engineAnimation = new Animation(0.09f, engine);
+		engineAnimation.setPlayMode(Animation.LOOP);
 
 		skullUp = new TextureRegion(texture, 192, 0, 24, 14);
 		// Create by flipping existing skullUp

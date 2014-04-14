@@ -89,8 +89,8 @@ public class GameRenderer {
 	private void initAssets() {
 		bg = AssetLoader.bg;
 		grass = AssetLoader.grass;
-		birdAnimation = AssetLoader.birdAnimation;
-		birdMid = AssetLoader.bird;
+		birdAnimation = AssetLoader.engineAnimation;
+		birdMid = AssetLoader.engine_2;
 		skullUp = AssetLoader.skullUp;
 		skullDown = AssetLoader.skullDown;
 		bar = AssetLoader.bar;
