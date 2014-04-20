@@ -16,7 +16,7 @@ public class AssetLoader {
 			engine_3, engine_4, skullUp, skullDown, bar, playButtonUp, playButtonDown,
 			ready, gameOver, highScore, scoreboard, star, noStar, retry;
 	public static Animation engineAnimation;
-	public static Sound dead, flap, coin, fall;
+	public static Sound crash, jump, beep, fall;
 	public static BitmapFont font, shadow, whiteFont;
 	private static Preferences prefs;
 
@@ -89,9 +89,9 @@ public class AssetLoader {
 		bar = new TextureRegion(texture, 136, 16, 22, 3);
 		bar.flip(false, true);
 
-		dead = Gdx.audio.newSound(Gdx.files.internal("data/dead.wav"));
-		flap = Gdx.audio.newSound(Gdx.files.internal("data/flap.wav"));
-		coin = Gdx.audio.newSound(Gdx.files.internal("data/coin.wav"));
+		crash = Gdx.audio.newSound(Gdx.files.internal("data/crash.wav"));
+		jump = Gdx.audio.newSound(Gdx.files.internal("data/jump.wav"));
+		beep = Gdx.audio.newSound(Gdx.files.internal("data/beep.wav"));
 		fall = Gdx.audio.newSound(Gdx.files.internal("data/fall.wav"));
 
 		font = new BitmapFont(Gdx.files.internal("data/text.fnt"));
@@ -125,9 +125,9 @@ public class AssetLoader {
 		texture.dispose();
 
 		// Dispose sounds
-		dead.dispose();
-		flap.dispose();
-		coin.dispose();
+		crash.dispose();
+		jump.dispose();
+		beep.dispose();
 
 		font.dispose();
 		shadow.dispose();

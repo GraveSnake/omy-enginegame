@@ -85,20 +85,20 @@ public class ScrollHandler {
 						+ bird.getWidth()) {
 			addScore(1);
 			pipe1.setScored(true);
-			AssetLoader.coin.play();
+			AssetLoader.beep.play();
 		} else if (!pipe2.isScored()
 				&& pipe2.getX() + (pipe2.getWidth() / 2) < bird.getX()
 						+ bird.getWidth()) {
 			addScore(1);
 			pipe2.setScored(true);
-			AssetLoader.coin.play();
+			AssetLoader.beep.play();
 
 		} else if (!pipe3.isScored()
 				&& pipe3.getX() + (pipe3.getWidth() / 2) < bird.getX()
 						+ bird.getWidth()) {
 			addScore(1);
 			pipe3.setScored(true);
-			AssetLoader.coin.play();
+			AssetLoader.beep.play();
 
 		}
 
