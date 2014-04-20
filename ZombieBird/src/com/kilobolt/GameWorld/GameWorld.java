@@ -65,7 +65,7 @@ public class GameWorld {
 		if (scroller.collides(bird) && bird.isAlive()) {
 			scroller.stop();
 			bird.die();
-			AssetLoader.dead.play();
+			AssetLoader.crash.play();
 			renderer.prepareTransition(255, 255, 255, .3f);
 
 			AssetLoader.fall.play();
@@ -74,7 +74,7 @@ public class GameWorld {
 		if (Intersector.overlaps(bird.getBoundingCircle(), ground)) {
 
 			if (bird.isAlive()) {
-				AssetLoader.dead.play();
+				AssetLoader.crash.play();
 				renderer.prepareTransition(255, 255, 255, .3f);
 
 				bird.die();
