@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module>
+    <entry-point class="om.flappyrobot.Engine.client.GwtLauncher"/>
+    <set-configuration-property name="gdx.assetpath" value="../FlappyRobot-android/assets"/>
+    <inherits name="FRGame"/>
+    <inherits name="aurelienribon.tweenengine"/>
+    <inherits name="com.badlogic.gdx.backends.gdx_backends_gwt"/>
+</module>
