@@ -10,5 +10,4 @@ public class Grass extends Scrollable {
 		position.x = x;
 		velocity.x = scrollSpeed;
 	}
-
 }

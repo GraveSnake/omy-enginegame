@@ -14,7 +14,6 @@ public class Engine {
 	private float rotation;
 	private int width;
 	private float height;
-
 	private float originalY;
 
 	private boolean isAlive;
@@ -137,5 +136,4 @@ public class Engine {
 	public boolean isAlive() {
 		return isAlive;
 	}
-
 }

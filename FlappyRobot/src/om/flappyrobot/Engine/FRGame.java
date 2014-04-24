@@ -18,5 +18,4 @@ public class FRGame extends Game {
 		super.dispose();
 		AssetLoader.dispose();
 	}
-
 }

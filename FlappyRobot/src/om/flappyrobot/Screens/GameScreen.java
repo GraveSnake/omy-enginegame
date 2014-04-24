@@ -5,12 +5,11 @@ import om.flappyrobot.GameWorld.GameWorld;
 import om.flappyrobot.Helpers.InputHandler;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
 
-public class GameScreen implements Screen {
+public class GameScreen extends AbstractScreen {
 
-	private GameWorld world;
-	private GameRenderer renderer;
+	private final GameWorld world;
+	private final GameRenderer renderer;
 	private float runTime;
 
 	// This is the constructor, not the class declaration
@@ -34,29 +33,4 @@ public class GameScreen implements Screen {
 		world.update(delta);
 		renderer.render(delta, runTime);
 	}
-
-	@Override
-	public void resize(int width, int height) {
-	}
-
-	@Override
-	public void show() {
-	}
-
-	@Override
-	public void hide() {
-	}
-
-	@Override
-	public void pause() {
-	}
-
-	@Override
-	public void resume() {
-	}
-
-	@Override
-	public void dispose() {
-	}
-
 }
