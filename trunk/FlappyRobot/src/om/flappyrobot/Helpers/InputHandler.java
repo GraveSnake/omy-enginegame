@@ -21,8 +21,7 @@ public class InputHandler implements InputProcessor {
 	private float scaleFactorX;
 	private float scaleFactorY;
 
-	public InputHandler(GameWorld myWorld, float scaleFactorX,
-			float scaleFactorY) {
+	public InputHandler(GameWorld myWorld, float scaleFactorX, float scaleFactorY) {
 		this.myWorld = myWorld;
 		myEngine = myWorld.getEngine();
 
@@ -32,10 +31,8 @@ public class InputHandler implements InputProcessor {
 		this.scaleFactorY = scaleFactorY;
 
 		menuButtons = new ArrayList<SimpleButton>();
-		playButton = new SimpleButton(
-				136 / 2 - (AssetLoader.playButtonUp.getRegionWidth() / 2),
-				midPointY + 50, 29, 16, AssetLoader.playButtonUp,
-				AssetLoader.playButtonDown);
+		playButton = new SimpleButton(136 / 2 - (AssetLoader.playButtonUp.getRegionWidth() / 2), midPointY + 50, 29,
+				16, AssetLoader.playButtonUp, AssetLoader.playButtonDown);
 		menuButtons.add(playButton);
 	}
 
@@ -71,7 +68,6 @@ public class InputHandler implements InputProcessor {
 				return true;
 			}
 		}
-
 		return false;
 	}
 
@@ -92,9 +88,7 @@ public class InputHandler implements InputProcessor {
 			if (myWorld.isGameOver() || myWorld.isHighScore()) {
 				myWorld.restart();
 			}
-
 		}
-
 		return false;
 	}
 
